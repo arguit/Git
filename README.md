@@ -12,27 +12,48 @@
 
 > clones repo into newly created subfolder
 
-`git clone <url>`
+```
+git clone <url>
+```
 
 ## Abort all changes on current branch
 
-`git reset --hard HEAD`
-`git reset --hard origin/<branch name>`
+```
+git reset --hard HEAD
+```
+
+```
+git reset --hard origin/<branch name>
+```
 
 ## Cherry pick changes without auto commit
 
-`git cherry-pick <commit id> -n`
+```
+git cherry-pick <commit id> -n
+```
 
 ## Create new branch with checkout
 
-`git checkout -b <branch name>`
+```
+git checkout -b <branch name>
+```
 
 ## Delete local branch
 
-`git branch -d <branch name>`
+```
+git branch -d <branch name>
+```
 
 ## Uncommit last N commits (keep changes)
 
-`git reset --soft HEAD~1`
-`git reset --soft HEAD~2`
-`git reset --soft HEAD~<number of commits to uncommit>`
+```
+git reset --soft HEAD~1
+```
+
+```
+git reset --soft HEAD~2
+```
+
+```
+git reset --soft HEAD~<number of commits to uncommit>
+```
