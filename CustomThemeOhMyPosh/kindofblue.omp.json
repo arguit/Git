@@ -4,21 +4,11 @@
     {
       "type": "prompt",
       "alignment": "left",
-      "segments": [       
-        {
-          "type": "root",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#000000",
-          "background": "#007dad",
-          "properties": {
-            "root_icon": "\u266b"
-          }
-        }, 
+      "segments": [        
         {
           "type": "path",
           "style": "powerline",
-          "powerline_symbol": "\uE0B0",          
+          "powerline_symbol": "\uE0B0",
           "foreground": "#000000",
           "background": "#02AEF0",
           "properties": {
@@ -36,7 +26,7 @@
           "properties": {
             "display_stash_count": true
           }
-        },        
+        },
         {
           "type": "exit",
           "style": "powerline",
@@ -59,10 +49,10 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#007ACC",
+          "foreground": "#02AEF0",
           "properties": {
             "prefix": "",
-            "text": "\u276F"
+            "text": "\uf0da"
           }
         }
       ]
