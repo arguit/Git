@@ -4,7 +4,15 @@
     {
       "type": "prompt",
       "alignment": "left",
-      "segments": [        
+      "segments": [       
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#007ACC",
+          "properties": {
+            "time_format": "15:04:05"
+          }
+        }, 
         {
           "type": "path",
           "style": "powerline",
@@ -28,13 +36,25 @@
           }
         },
         {
+          "type": "executiontime",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#007ACC",
+          "background": "#000000",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "prefix": "<#02AEF0>\ufbab</> "
+          }
+        },
+        {
           "type": "exit",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#ff8080",
+          "foreground": "#007ACC",
+          "background": "#000000",
           "properties": {
-            "prefix": " \uE20F"
+            "prefix": "<#02AEF0>\uE20F</> "
           }
         }
       ]
