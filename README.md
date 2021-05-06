@@ -59,7 +59,7 @@ git reset --soft HEAD~2
 git reset --soft HEAD~<number of commits to uncommit>
 ```
 
-## Merge master to develop afeter commit to master only
+## Merge master to develop after commit to master only
 
 ```bash
 # get the latest version of master
@@ -91,6 +91,17 @@ git pull origin <target branch>
 # 3. resolve (accept current or incoming or show differences and make changes manualy)
 
 # afte resolving conflicts
-git commit -m "Resolve merge conflicst"
+git commit -m "Resolve merge conflicts"
 git push
 ```
+
+## Update feature branch with the latest commits of develop branch
+
+```bash
+# go to the feature branch
+git fetch origin develop:develop
+
+# merge changes into the feature branch
+git merge develop
+```
+
