@@ -9,6 +9,7 @@
   - [Uncommit last N commits (keep changes)](#uncommit-last-n-commits-keep-changes)
   - [Merge master to develop afeter commit to master only](#merge-master-to-develop-afeter-commit-to-master-only)
   - [Resolve Conflicts on pull request](#resolve-conflicts-on-pull-request)
+  - [Update feature branch with the latest commits of develop branch](#update-feature-branch-with-the-latest-commits-of-develop-branch)
 
 ## Clone new repository
 
