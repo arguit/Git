@@ -10,7 +10,7 @@
   - [Merge master to develop afeter commit to master only](#merge-master-to-develop-afeter-commit-to-master-only)
   - [Resolve Conflicts on pull request](#resolve-conflicts-on-pull-request)
   - [Update feature branch with the latest commits of develop branch](#update-feature-branch-with-the-latest-commits-of-develop-branch)
-  - [Stash changes on created on "wrong" feature branch and apply them on the "right" one](#stash-changes-on-created-on-wrong-feature-branch-and-apply-them-on-the-right-one)
+  - [Stash changes created on "wrong" feature branch and apply them on the "right" one](#stash-changes-created-on-wrong-feature-branch-and-apply-them-on-the-right-one)
 
 ## Clone new repository
 
@@ -107,7 +107,7 @@ git fetch origin develop:develop
 git merge develop
 ```
 
-## Stash changes on created on wrong feature branch and apply them on the right one
+## Stash changes created on wrong feature branch and apply them on the right one
 
 ```bash
 # on the "wrong" branch
