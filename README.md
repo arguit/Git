@@ -7,7 +7,7 @@
   - [Create new branch with checkout](#create-new-branch-with-checkout)
   - [Delete local branch](#delete-local-branch)
   - [Uncommit last N commits (keep changes)](#uncommit-last-n-commits-keep-changes)
-  - [Merge master to develop afeter commit to master only](#merge-master-to-develop-afeter-commit-to-master-only)
+  - [Merge master to develop afeter commit to master only](#merge-master-to-develop-after-commit-to-master-only)
   - [Resolve Conflicts on pull request](#resolve-conflicts-on-pull-request)
   - [Update feature branch with the latest commits of develop branch](#update-feature-branch-with-the-latest-commits-of-develop-branch)
   - [Stash changes created on "wrong" feature branch and apply them on the "right" one](#stash-changes-created-on-wrong-feature-branch-and-apply-them-on-the-right-one)
