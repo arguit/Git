@@ -11,6 +11,7 @@
   - [Resolve Conflicts on pull request](#resolve-conflicts-on-pull-request)
   - [Update feature branch with the latest commits of develop branch](#update-feature-branch-with-the-latest-commits-of-develop-branch)
   - [Stash changes created on "wrong" feature branch and apply them on the "right" one](#stash-changes-created-on-wrong-feature-branch-and-apply-them-on-the-right-one)
+  - [Undo uncommited changes](#undo-uncommited-changes)
 
 ## Clone new repository
 
@@ -121,4 +122,45 @@ Show list of all stashes
 
 ```bash
 git stash list
+```
+
+## Undo uncommited changes
+
+This will unstage all files you might have staged with `git add`
+
+```bash
+git reset
+```
+
+This will revert all local uncommitted changes (should be executed in repo root)
+
+```bash
+git checkout .
+```
+
+You can also revert uncommitted changes only to particular file or directory
+
+```bash
+git checkout <some_dir|file.txt>
+```
+
+Yet another way to revert all uncommitted changes (longer to type, but works from any subdirectory)
+
+```bash
+git reset --hard HEAD
+```
+
+This will remove all local untracked files, so only git tracked files remain
+
+```bash
+git clean -fdx
+```
+> WARNING: -x will also remove all ignored files, including ones specified by .gitignore! You may want to use -n for preview of files to be deleted.
+
+To sum it up: executing commands below is basically equivalent to fresh git clone from original source (but it does not re-download anything, so is much faster)
+
+```bash
+git reset
+git checkout .
+git clean -fdx
 ```
