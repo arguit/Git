@@ -51,70 +51,101 @@ git branch -d <branch name>
 
 ## Uncommit last N commits (keep changes)
 
+Uncommit one last commit
+
 ```bash
-# uncommit one last commit
 git reset --soft HEAD~1
+```
 
-# uncommit two last commits
+Uncommit two last commits
+
+```bash
 git reset --soft HEAD~2
+```
 
-# uncommit N last commits
+Uncommit N last commits
+
+```bash
 git reset --soft HEAD~<number of commits to uncommit>
 ```
 
 ## Merge master to develop after commit to master only
 
+Get the latest version of master
 ```bash
-# get the latest version of master
 git checkout master
 git pull
+```
 
-# get the latest version of develop
+Get the latest version of develop
+
+```bash
 git checkout develop
 git pull
+```
 
-# merge master into develop
+Merge master into develop
+
+```bash
 git merge master
+```
 
-# push the merge
+Push the merge
+
+```bash
 git push
 ```
 
 ## Resolve Conflicts on pull request
 
+Swtich to the branch that I'm merging to some other branch
+
 ```bash
-# swtich to the branch that I'm merging to some other branch
 git checkout <source branch>
+```
 
-# pull for the target branch that I'm merging into
+Pull for the target branch that I'm merging into
+
+```bash
 git pull origin <target branch>
+```
 
-# 1. open solution in the VSCode
-# 2. go to the conflict files
-# 3. resolve (accept current or incoming or show differences and make changes manualy)
+1. open solution in the VSCode
+2. go to the conflict files
+3. resolve (accept current or incoming or show differences and make changes manualy)
 
-# afte resolving conflicts
+After resolving conflicts
+
+```bash
 git commit -m "Resolve merge conflicts"
 git push
 ```
 
 ## Update feature branch with the latest commits of develop branch
 
-```bash
-# go to the feature branch
-git fetch origin develop:develop
+Go to the feature branch
 
-# merge changes into the feature branch
+```bash
+git fetch origin develop:develop
+```
+
+Merge changes into the feature branch
+
+```bash
 git merge develop
 ```
 
 ## Stash changes created on wrong feature branch and apply them on the right one
 
-```bash
-# on the "wrong" branch
-git stash
+On the "wrong" branch
 
-# go to the "right" branch
+```bash
+git stash
+```
+
+Go to the "right" branch
+
+```bash
 git stash pop <index of the last stash>
 ```
 
