@@ -1,4 +1,4 @@
-# CheatSheet
+# GIT CheatSheet
 
 - [CheatSheet](#cheatsheet)
   - [Clone new repository](#clone-new-repository)
