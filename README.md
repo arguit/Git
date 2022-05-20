@@ -201,7 +201,7 @@ git clean -fdx
 
 ```bash
 git stash
-git checkout correct-branch
+git checkout <correct-branch>
 git stash pop
 ```
 
