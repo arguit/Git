@@ -12,6 +12,7 @@
   - [Update feature branch with the latest commits of develop branch](#update-feature-branch-with-the-latest-commits-of-develop-branch)
   - [Stash changes created on "wrong" feature branch and apply them on the "right" one](#stash-changes-created-on-wrong-feature-branch-and-apply-them-on-the-right-one)
   - [Undo uncommited changes](#undo-uncommited-changes)
+  - [Move uncommited changes to another branch](#Move-uncommited-changes-to-another-branch)
 
 ## Clone new repository
 
@@ -195,3 +196,13 @@ git reset
 git checkout .
 git clean -fdx
 ```
+
+## Move uncommited changes to another branch
+
+```bash
+git stash
+git checkout correct-branch
+git stash pop
+```
+
+> Note: No need to use stash command. Uncommitted changes do not belong to any branch so just use `git checkout -b <new-branch>`
