@@ -13,6 +13,7 @@
   - [Stash changes created on "wrong" feature branch and apply them on the "right" one](#stash-changes-created-on-wrong-feature-branch-and-apply-them-on-the-right-one)
   - [Undo uncommited changes](#undo-uncommited-changes)
   - [Move uncommited changes to another branch](#Move-uncommited-changes-to-another-branch)
+  - [Re-push develop branch after accidental deletion via PR develop into masters](#Re-push-develop-branch-after-accidental-deletion-via-PR-develop-into-masters)
 
 ## Clone new repository
 
@@ -206,3 +207,14 @@ git stash pop
 ```
 
 > Note: No need to use stash command. Uncommitted changes do not belong to any branch so just use `git checkout -b <new-branch>`
+
+## Re-push develop branch after accidental deletion via PR develop into masters
+
+> find last merge commit e.g. 53172fe2fa71ace8d6f2a1442cba026da9c9345f
+
+```bash
+git fetch
+git checkout 53172fe2fa71ace8d6f2a1442cba026da9c9345f
+git checkout -b develop
+git push
+```
